@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F8844FA1C6663EB0054CAB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8844F91C6663EB0054CAB1 /* LogInViewController.swift */; };
 		6FB7F5891C644C3A005A6F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F5881C644C3A005A6F23 /* AppDelegate.swift */; };
 		6FB7F58B1C644C3A005A6F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F58A1C644C3A005A6F23 /* ViewController.swift */; };
 		6FB7F58E1C644C3A005A6F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F58C1C644C3A005A6F23 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F8844F91C6663EB0054CAB1 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		6FB7F5851C644C3A005A6F23 /* XXAlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXAlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB7F5881C644C3A005A6F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FB7F58A1C644C3A005A6F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				6FB7F5881C644C3A005A6F23 /* AppDelegate.swift */,
 				6FB7F58A1C644C3A005A6F23 /* ViewController.swift */,
 				6FB7F58C1C644C3A005A6F23 /* Main.storyboard */,
+				6F8844F91C6663EB0054CAB1 /* LogInViewController.swift */,
 				6FB7F59A1C64FFBB005A6F23 /* AlarmViewController.swift */,
 				6FB7F58F1C644C3A005A6F23 /* Assets.xcassets */,
 				6FB7F59C1C650258005A6F23 /* DosEquisThemeSong.mp3 */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8844FA1C6663EB0054CAB1 /* LogInViewController.swift in Sources */,
 				6FB7F58B1C644C3A005A6F23 /* ViewController.swift in Sources */,
 				6FB7F5891C644C3A005A6F23 /* AppDelegate.swift in Sources */,
 				6FB7F59B1C64FFBB005A6F23 /* AlarmViewController.swift in Sources */,
@@ -297,6 +301,7 @@
 				6FB7F5991C644C3A005A6F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

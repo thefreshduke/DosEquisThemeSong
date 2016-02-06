@@ -22,25 +22,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="XX"/>
                                 <connections>
-                                    <segue destination="rAF-do-wJv" kind="show" id="6lb-N4-Llk"/>
+                                    <action selector="goToNextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onY-e2-ee9"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="196-1v-RnF">
-                                <rect key="frame" x="129" y="416" width="343" height="102"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="SIGN IN"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="196-1v-RnF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5wp-M8-vac"/>
                             <constraint firstItem="sMi-tp-98X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AgU-Fd-IZ7"/>
                             <constraint firstItem="sMi-tp-98X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SwX-uo-M3j"/>
                             <constraint firstItem="sMi-tp-98X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="auk-9F-pxf"/>
-                            <constraint firstItem="196-1v-RnF" firstAttribute="top" secondItem="sMi-tp-98X" secondAttribute="bottom" constant="65" id="jJy-MC-hrd"/>
                             <constraint firstItem="sMi-tp-98X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lQy-Wi-pgb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="rAF-do-wJv" kind="show" identifier="LoggedInSegue" id="PBC-Z9-AuM"/>
+                        <segue destination="xuU-LH-W7t" kind="show" identifier="NotLoggedInSegue" id="zBW-Ts-t6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +97,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQY-gB-bs9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873" y="339"/>
+            <point key="canvasLocation" x="1918" y="339"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="Xhc-8w-qLe">
+            <objects>
+                <viewController id="xuU-LH-W7t" customClass="LogInViewController" customModule="XXAlarmClock" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wUa-nr-6ur"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Jx-uF-Hna"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yUT-dR-qmb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzA-Jg-Ins">
+                                <rect key="frame" x="129" y="249" width="343" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="SIGN IN"/>
+                                <connections>
+                                    <segue destination="rAF-do-wJv" kind="show" id="piS-Q8-Cwq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TzA-Jg-Ins" firstAttribute="centerX" secondItem="yUT-dR-qmb" secondAttribute="centerX" id="gYT-WJ-slc"/>
+                            <constraint firstItem="TzA-Jg-Ins" firstAttribute="centerY" secondItem="yUT-dR-qmb" secondAttribute="centerY" id="oH5-sB-kcO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQN-n2-4tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="739"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PBC-Z9-AuM"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let isLoggedIn: Bool = false
+    
+    @IBAction func goToNextView(sender: AnyObject) {
+        if (isLoggedIn) {
+            self.performSegueWithIdentifier("LoggedInSegue", sender: self)
+        }
+        else {
+            self.performSegueWithIdentifier("NotLoggedInSegue", sender: self)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
