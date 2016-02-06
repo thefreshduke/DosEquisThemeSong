@@ -5,11 +5,13 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4" : 0,
+    "6104B0A166F8EED9A824BCDA95377AFA785C5128" : 0,
     "469B25E0EA6DC9121B9632716688B6B6764EF985" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EC6F8FDD-6AC5-4838-A245-771923BF685F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4" : "",
+    "6104B0A166F8EED9A824BCDA95377AFA785C5128" : "PseudoTwitter\/",
     "469B25E0EA6DC9121B9632716688B6B6764EF985" : "XXAlarmClock\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "XXAlarmClock",
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:thefreshduke\/PrimeNumberTutorial.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:thefreshduke\/PseudoTwitter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6104B0A166F8EED9A824BCDA95377AFA785C5128"
     }
   ]
 }

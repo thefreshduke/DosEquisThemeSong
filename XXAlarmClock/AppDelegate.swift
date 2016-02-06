@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Twitter.sharedInstance().startWithConsumerKey("4KHX6vsuypGRE4su5lW7jMkB2", consumerSecret: "wdJb3E6MRVq95DY1QsTZ6gwllGb344GecVgyGhCdQ52LWGWtbu")
+//        Fabric.with([Twitter.sharedInstance()])
+        Fabric.with([Twitter.self])
+        
         return true
     }
 
