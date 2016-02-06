@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XXAlarmClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-tp-98X">
+                                <rect key="frame" x="254" y="249" width="96" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="XX"/>
+                                <connections>
+                                    <segue destination="rAF-do-wJv" kind="show" id="6lb-N4-Llk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="196-1v-RnF">
+                                <rect key="frame" x="129" y="416" width="343" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="SIGN IN"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="196-1v-RnF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5wp-M8-vac"/>
+                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AgU-Fd-IZ7"/>
+                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SwX-uo-M3j"/>
+                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="auk-9F-pxf"/>
+                            <constraint firstItem="196-1v-RnF" firstAttribute="top" secondItem="sMi-tp-98X" secondAttribute="bottom" constant="65" id="jJy-MC-hrd"/>
+                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lQy-Wi-pgb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="339"/>
+        </scene>
+        <!--Alarm View Controller-->
+        <scene sceneID="4i8-4Z-Ozh">
+            <objects>
+                <viewController id="rAF-do-wJv" customClass="AlarmViewController" customModule="XXAlarmClock" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ov6-qn-PEg"/>
+                        <viewControllerLayoutGuide type="bottom" id="FPT-5g-Fkc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ewm-i5-bCD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1A-V6-TfX">
+                                <rect key="frame" x="101" y="41" width="398" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="XX PLAY XX"/>
+                                <connections>
+                                    <action selector="playDosEquisThemeSong:" destination="rAF-do-wJv" eventType="touchUpInside" id="U23-Ew-3YR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-gT-m0c">
+                                <rect key="frame" x="129" y="167" width="343" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="|| TWEET ||"/>
+                                <connections>
+                                    <action selector="stopDosEquisThemeSong:" destination="rAF-do-wJv" eventType="touchUpInside" id="5Pe-Si-trW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-2e-rdG">
+                                <rect key="frame" x="107" y="414" width="387" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="SET ALARM TIME"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CURRENT TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9h-qb-1MY">
+                                <rect key="frame" x="177" y="330" width="246" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v2M-2e-rdG" firstAttribute="top" secondItem="A9h-qb-1MY" secondAttribute="bottom" constant="54" id="8ig-do-S5i"/>
+                            <constraint firstItem="c1A-V6-TfX" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="9k9-fs-pHv"/>
+                            <constraint firstItem="1r5-gT-m0c" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="IIK-I7-SDf"/>
+                            <constraint firstItem="A9h-qb-1MY" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="Lxa-U3-iGc"/>
+                            <constraint firstItem="1r5-gT-m0c" firstAttribute="top" secondItem="c1A-V6-TfX" secondAttribute="bottom" constant="24" id="S3a-6m-Ivo"/>
+                            <constraint firstItem="v2M-2e-rdG" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="g9z-xt-fuE"/>
+                            <constraint firstItem="c1A-V6-TfX" firstAttribute="top" secondItem="ov6-qn-PEg" secondAttribute="bottom" constant="21" id="qCu-S0-ofm"/>
+                            <constraint firstItem="A9h-qb-1MY" firstAttribute="top" secondItem="1r5-gT-m0c" secondAttribute="bottom" constant="61" id="ybJ-8q-Icc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQY-gB-bs9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="339"/>
+        </scene>
+    </scenes>
+</document>
