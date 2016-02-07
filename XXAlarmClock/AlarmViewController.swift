@@ -19,8 +19,8 @@ class AlarmViewController: UIViewController {
     @IBOutlet weak var alarmTimeLabel: UITextField!
     
     var alarmHour: Int = 20
-    var alarmMinute: Int = 17
-    var alarmSecond: Int = 00
+    var alarmMinute: Int = 33
+    var alarmSecond: Int = 30
     
     @IBOutlet weak var timeDisplayLabel: UITextField!
     
