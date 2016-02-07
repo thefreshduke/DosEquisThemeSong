@@ -71,30 +71,42 @@
                                     <action selector="stopDosEquisThemeSong:" destination="rAF-do-wJv" eventType="touchUpInside" id="5Pe-Si-trW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-2e-rdG">
-                                <rect key="frame" x="107" y="414" width="387" height="102"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="SET ALARM TIME"/>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CURRENT TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9h-qb-1MY">
                                 <rect key="frame" x="177" y="330" width="246" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ALARM TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIG-oR-TnX">
+                                <rect key="frame" x="177" y="404" width="246" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-2e-rdG">
+                                <rect key="frame" x="107" y="478" width="387" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="SET ALARM TIME"/>
+                                <connections>
+                                    <action selector="setAlarmTime:" destination="rAF-do-wJv" eventType="touchUpInside" id="zqt-fT-ZYk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v2M-2e-rdG" firstAttribute="top" secondItem="A9h-qb-1MY" secondAttribute="bottom" constant="54" id="8ig-do-S5i"/>
+                            <constraint firstItem="v2M-2e-rdG" firstAttribute="top" secondItem="WIG-oR-TnX" secondAttribute="bottom" constant="44" id="7T6-7n-HiP"/>
                             <constraint firstItem="c1A-V6-TfX" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="9k9-fs-pHv"/>
                             <constraint firstItem="1r5-gT-m0c" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="IIK-I7-SDf"/>
                             <constraint firstItem="A9h-qb-1MY" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="Lxa-U3-iGc"/>
                             <constraint firstItem="1r5-gT-m0c" firstAttribute="top" secondItem="c1A-V6-TfX" secondAttribute="bottom" constant="24" id="S3a-6m-Ivo"/>
+                            <constraint firstItem="v2M-2e-rdG" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="WDX-0A-vn9"/>
                             <constraint firstItem="v2M-2e-rdG" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="g9z-xt-fuE"/>
                             <constraint firstItem="c1A-V6-TfX" firstAttribute="top" secondItem="ov6-qn-PEg" secondAttribute="bottom" constant="21" id="qCu-S0-ofm"/>
+                            <constraint firstItem="WIG-oR-TnX" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="xje-9u-ULt"/>
+                            <constraint firstItem="WIG-oR-TnX" firstAttribute="top" secondItem="A9h-qb-1MY" secondAttribute="bottom" constant="44" id="y7O-6Z-Vtd"/>
                             <constraint firstItem="A9h-qb-1MY" firstAttribute="top" secondItem="1r5-gT-m0c" secondAttribute="bottom" constant="61" id="ybJ-8q-Icc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alarmTimeLabel" destination="WIG-oR-TnX" id="WPx-ea-nnh"/>
                         <outlet property="timeDisplayLabel" destination="A9h-qb-1MY" id="bks-TQ-RuL"/>
                     </connections>
                 </viewController>
