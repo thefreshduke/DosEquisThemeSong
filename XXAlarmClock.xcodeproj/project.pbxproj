@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3661181C66BCCC001AC1DC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3661171C66BCCC001AC1DC /* Twitter.framework */; };
+		6F3661191C66C570001AC1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F58C1C644C3A005A6F23 /* Main.storyboard */; };
 		6F8844FA1C6663EB0054CAB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8844F91C6663EB0054CAB1 /* LogInViewController.swift */; };
 		6F8845061C6677100054CAB1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8845031C6677100054CAB1 /* Fabric.framework */; };
 		6F8845071C6677100054CAB1 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8845041C6677100054CAB1 /* TwitterKit.framework */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F3661171C66BCCC001AC1DC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		6F8844F91C6663EB0054CAB1 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		6F8845031C6677100054CAB1 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		6F8845041C6677100054CAB1 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3661181C66BCCC001AC1DC /* Twitter.framework in Frameworks */,
 				6F8845061C6677100054CAB1 /* Fabric.framework in Frameworks */,
 				6F88450A1C6677C50054CAB1 /* TwitterCore.framework in Frameworks */,
 				6F8845071C6677100054CAB1 /* TwitterKit.framework in Frameworks */,
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				6F8845121C66A81B0054CAB1 /* Assets.xcassets */,
+				6F3661171C66BCCC001AC1DC /* Twitter.framework */,
 				6F8845091C6677C50054CAB1 /* TwitterCore.framework */,
 				6F8845031C6677100054CAB1 /* Fabric.framework */,
 				6F8845041C6677100054CAB1 /* TwitterKit.framework */,
@@ -143,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3661191C66C570001AC1DC /* Main.storyboard in Resources */,
 				6F8845131C66A81B0054CAB1 /* Assets.xcassets in Resources */,
 				6F8845081C6677100054CAB1 /* TwitterKitResources.bundle in Resources */,
 			);

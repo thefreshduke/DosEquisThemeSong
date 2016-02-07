@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment version="2320" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
@@ -35,8 +34,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="rAF-do-wJv" kind="show" identifier="LoggedInSegue" id="PBC-Z9-AuM"/>
-                        <segue destination="xuU-LH-W7t" kind="show" identifier="NotLoggedInSegue" id="zBW-Ts-t6S"/>
+                        <segue destination="rAF-do-wJv" kind="presentation" identifier="LoggedInSegue" id="PBC-Z9-AuM"/>
+                        <segue destination="xuU-LH-W7t" kind="presentation" identifier="NotLoggedInSegue" id="zBW-Ts-t6S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,7 +115,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="SIGN IN"/>
                                 <connections>
-                                    <segue destination="rAF-do-wJv" kind="show" id="piS-Q8-Cwq"/>
+                                    <segue destination="rAF-do-wJv" kind="presentation" id="piS-Q8-Cwq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,6 +132,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PBC-Z9-AuM"/>
+        <segue reference="piS-Q8-Cwq"/>
     </inferredMetricsTieBreakers>
 </document>
