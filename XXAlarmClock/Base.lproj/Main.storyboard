@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-tp-98X">
-                                <rect key="frame" x="254" y="249" width="96" height="102"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                <state key="normal" title="XX"/>
+                                <state key="normal" title="    "/>
                                 <connections>
                                     <action selector="goToNextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onY-e2-ee9"/>
                                 </connections>
@@ -57,6 +57,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-gT-m0c">
                                 <rect key="frame" x="129" y="84" width="343" height="102"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="|| TWEET ||"/>
                                 <connections>
@@ -75,6 +76,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-2e-rdG">
                                 <rect key="frame" x="107" y="377" width="387" height="102"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="SET ALARM TIME"/>
                                 <connections>
@@ -127,6 +129,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bJN-Np-Tq1"/>
+        <segue reference="PBC-Z9-AuM"/>
     </inferredMetricsTieBreakers>
 </document>

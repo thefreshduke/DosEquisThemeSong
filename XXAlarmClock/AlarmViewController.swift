@@ -18,9 +18,9 @@ class AlarmViewController: UIViewController {
     
     @IBOutlet weak var alarmTimeLabel: UITextField!
     
-    var alarmHour: Int = 20
-    var alarmMinute: Int = 33
-    var alarmSecond: Int = 30
+    var alarmHour: Int = 13
+    var alarmMinute: Int = 44
+    var alarmSecond: Int = 00
     
     @IBOutlet weak var timeDisplayLabel: UITextField!
     
@@ -47,7 +47,7 @@ class AlarmViewController: UIViewController {
     @IBAction func stopDosEquisThemeSong(sender: AnyObject) {
         let composer = TWTRComposer()
         
-        composer.setText("I don't always ... But when I do, I...")
+        composer.setText("I don't always ... But when I do, I ...")
         composer.setImage(UIImage(named: "fabric"))
         
         // Called from a UIViewController
@@ -65,6 +65,9 @@ class AlarmViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "xx_dosequis.png")!)
+        
         if let dosEquisThemeSong = self.setupAudioPlayerWithFile("DosEquisThemeSong", type:"mp3") {
             self.dosEquisThemeSong = dosEquisThemeSong
         }
@@ -85,7 +88,6 @@ class AlarmViewController: UIViewController {
         // 1
         let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
         let url = NSURL.fileURLWithPath(path!)
-//        let url = NSURL.fileURLWithPath("DosEquisThemeSong.mp3")
         
         // 2
         var audioPlayer: AVAudioPlayer?
@@ -93,7 +95,6 @@ class AlarmViewController: UIViewController {
         // 3
         do {
             try audioPlayer = AVAudioPlayer(contentsOfURL: url)
-//            try audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath("DosEquisThemeSong.mp3"))
         }
         catch {
             print("Player not available")

@@ -14,6 +14,8 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "xx_dosequis.png")!)
+        
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
             if (session != nil) {
                 print("signed in as \(session!.userName)");

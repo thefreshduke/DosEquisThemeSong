@@ -17,6 +17,9 @@
 		6F8845131C66A81B0054CAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8845121C66A81B0054CAB1 /* Assets.xcassets */; };
 		6FA95A5B1C674B27009F0C9D /* DosEquisThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F59C1C650258005A6F23 /* DosEquisThemeSong.mp3 */; };
 		6FA95A5C1C675826009F0C9D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F5941C644C3A005A6F23 /* Info.plist */; };
+		6FA95A601C6777A4009F0C9D /* xx_dosequis.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA95A5F1C6777A4009F0C9D /* xx_dosequis.png */; };
+		6FA95A621C6777FB009F0C9D /* DosEquisThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FA95A611C6777FB009F0C9D /* DosEquisThemeSong.mp3 */; };
+		6FA95A641C6778F6009F0C9D /* xx_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA95A631C6778F6009F0C9D /* xx_man.png */; };
 		6FB7F5891C644C3A005A6F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F5881C644C3A005A6F23 /* AppDelegate.swift */; };
 		6FB7F58B1C644C3A005A6F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F58A1C644C3A005A6F23 /* ViewController.swift */; };
 		6FB7F59B1C64FFBB005A6F23 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F59A1C64FFBB005A6F23 /* AlarmViewController.swift */; };
@@ -30,6 +33,9 @@
 		6F8845051C6677100054CAB1 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		6F8845091C6677C50054CAB1 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		6F8845121C66A81B0054CAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = XXAlarmClock/Assets.xcassets; sourceTree = "<group>"; };
+		6FA95A5F1C6777A4009F0C9D /* xx_dosequis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xx_dosequis.png; path = XXAlarmClock/xx_dosequis.png; sourceTree = "<group>"; };
+		6FA95A611C6777FB009F0C9D /* DosEquisThemeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = DosEquisThemeSong.mp3; path = XXAlarmClock/DosEquisThemeSong.mp3; sourceTree = "<group>"; };
+		6FA95A631C6778F6009F0C9D /* xx_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xx_man.png; path = XXAlarmClock/xx_man.png; sourceTree = "<group>"; };
 		6FB7F5851C644C3A005A6F23 /* XXAlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXAlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB7F5881C644C3A005A6F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FB7F58A1C644C3A005A6F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 		6FB7F57C1C644C3A005A6F23 = {
 			isa = PBXGroup;
 			children = (
+				6FA95A631C6778F6009F0C9D /* xx_man.png */,
+				6FA95A611C6777FB009F0C9D /* DosEquisThemeSong.mp3 */,
+				6FA95A5F1C6777A4009F0C9D /* xx_dosequis.png */,
 				6F8845121C66A81B0054CAB1 /* Assets.xcassets */,
 				6F3661171C66BCCC001AC1DC /* Twitter.framework */,
 				6F8845091C6677C50054CAB1 /* TwitterCore.framework */,
@@ -150,9 +159,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA95A641C6778F6009F0C9D /* xx_man.png in Resources */,
 				6F3661191C66C570001AC1DC /* Main.storyboard in Resources */,
+				6FA95A601C6777A4009F0C9D /* xx_dosequis.png in Resources */,
 				6F8845131C66A81B0054CAB1 /* Assets.xcassets in Resources */,
 				6FA95A5B1C674B27009F0C9D /* DosEquisThemeSong.mp3 in Resources */,
+				6FA95A621C6777FB009F0C9D /* DosEquisThemeSong.mp3 in Resources */,
 				6FA95A5C1C675826009F0C9D /* Info.plist in Resources */,
 				6F8845081C6677100054CAB1 /* TwitterKitResources.bundle in Resources */,
 			);
