@@ -19,11 +19,10 @@ class AlarmViewController: UIViewController {
     @IBOutlet weak var alarmTimeLabel: UITextField!
     
     var alarmHour: Int = 20
-    var alarmMinute: Int = 04
+    var alarmMinute: Int = 17
     var alarmSecond: Int = 00
     
     @IBOutlet weak var timeDisplayLabel: UITextField!
-    
     
     @IBAction func setAlarmTime(sender: AnyObject) {
 //        let alert = UIAlertController(title: "Set alarm time", message: "", preferredStyle: UIAlertControllerStyle.Alert)
@@ -43,14 +42,6 @@ class AlarmViewController: UIViewController {
 //            textField.placeholder = "Enter text:"
 //        })
 //        self.presentViewController(alert, animated: true, completion: nil)
-    }
-    
-    
-    
-    @IBAction func playDosEquisThemeSong(sender: AnyObject) {
-        dosEquisThemeSong?.numberOfLoops = -1
-        dosEquisThemeSong?.volume = 1
-        dosEquisThemeSong?.play()
     }
     
     @IBAction func stopDosEquisThemeSong(sender: AnyObject) {
@@ -133,6 +124,23 @@ class AlarmViewController: UIViewController {
             dosEquisThemeSong?.numberOfLoops = -1
             dosEquisThemeSong?.volume = 1
             dosEquisThemeSong?.play()
+            
+            let composer = TWTRComposer()
+            
+            composer.setText("I don't always ... But when I do, I...")
+            composer.setImage(UIImage(named: "fabric"))
+            
+            // Called from a UIViewController
+            composer.showFromViewController(self) { result in
+                if (result == TWTRComposerResult.Cancelled) {
+                    print("Tweet composition cancelled")
+                }
+                else {
+                    print("Sending tweet!")
+                    self.dosEquisThemeSong?.stop()
+                    self.dosEquisThemeSong?.currentTime = 0
+                }
+            }
         }
     }
 }

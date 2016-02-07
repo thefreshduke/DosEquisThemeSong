@@ -55,16 +55,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1A-V6-TfX">
-                                <rect key="frame" x="101" y="41" width="398" height="102"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="XX PLAY XX"/>
-                                <connections>
-                                    <action selector="playDosEquisThemeSong:" destination="rAF-do-wJv" eventType="touchUpInside" id="U23-Ew-3YR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-gT-m0c">
-                                <rect key="frame" x="129" y="167" width="343" height="102"/>
+                                <rect key="frame" x="129" y="84" width="343" height="102"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="|| TWEET ||"/>
                                 <connections>
@@ -72,17 +64,17 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CURRENT TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9h-qb-1MY">
-                                <rect key="frame" x="177" y="330" width="246" height="30"/>
+                                <rect key="frame" x="177" y="222" width="246" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ALARM TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIG-oR-TnX">
-                                <rect key="frame" x="177" y="404" width="246" height="30"/>
+                                <rect key="frame" x="177" y="321" width="246" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-2e-rdG">
-                                <rect key="frame" x="107" y="478" width="387" height="102"/>
+                                <rect key="frame" x="107" y="377" width="387" height="102"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="SET ALARM TIME"/>
                                 <connections>
@@ -92,17 +84,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v2M-2e-rdG" firstAttribute="top" secondItem="WIG-oR-TnX" secondAttribute="bottom" constant="44" id="7T6-7n-HiP"/>
-                            <constraint firstItem="c1A-V6-TfX" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="9k9-fs-pHv"/>
-                            <constraint firstItem="1r5-gT-m0c" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="IIK-I7-SDf"/>
+                            <constraint firstItem="A9h-qb-1MY" firstAttribute="top" secondItem="1r5-gT-m0c" secondAttribute="bottom" constant="36" id="B43-aA-YgY"/>
                             <constraint firstItem="A9h-qb-1MY" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="Lxa-U3-iGc"/>
-                            <constraint firstItem="1r5-gT-m0c" firstAttribute="top" secondItem="c1A-V6-TfX" secondAttribute="bottom" constant="24" id="S3a-6m-Ivo"/>
                             <constraint firstItem="v2M-2e-rdG" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="WDX-0A-vn9"/>
+                            <constraint firstItem="1r5-gT-m0c" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="fpm-Ov-lJ4"/>
                             <constraint firstItem="v2M-2e-rdG" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="g9z-xt-fuE"/>
-                            <constraint firstItem="c1A-V6-TfX" firstAttribute="top" secondItem="ov6-qn-PEg" secondAttribute="bottom" constant="21" id="qCu-S0-ofm"/>
+                            <constraint firstItem="v2M-2e-rdG" firstAttribute="top" secondItem="WIG-oR-TnX" secondAttribute="bottom" constant="26" id="qvY-4t-RKQ"/>
+                            <constraint firstItem="1r5-gT-m0c" firstAttribute="top" secondItem="ov6-qn-PEg" secondAttribute="bottom" constant="64" id="vhg-Ig-uj7"/>
                             <constraint firstItem="WIG-oR-TnX" firstAttribute="centerX" secondItem="Ewm-i5-bCD" secondAttribute="centerX" id="xje-9u-ULt"/>
                             <constraint firstItem="WIG-oR-TnX" firstAttribute="top" secondItem="A9h-qb-1MY" secondAttribute="bottom" constant="44" id="y7O-6Z-Vtd"/>
-                            <constraint firstItem="A9h-qb-1MY" firstAttribute="top" secondItem="1r5-gT-m0c" secondAttribute="bottom" constant="61" id="ybJ-8q-Icc"/>
                         </constraints>
                     </view>
                     <connections>
