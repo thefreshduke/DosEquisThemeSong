@@ -21,8 +21,23 @@ class AlarmViewController: UIViewController {
     }
     
     @IBAction func stopDosEquisThemeSong(sender: AnyObject) {
-        dosEquisThemeSong?.stop()
-        dosEquisThemeSong?.currentTime = 0
+        let composer = TWTRComposer()
+        
+        composer.setText("just setting up my Fabric")
+        composer.setImage(UIImage(named: "fabric"))
+        
+        // Called from a UIViewController
+        composer.showFromViewController(self) { result in
+            if (result == TWTRComposerResult.Cancelled) {
+                print("Tweet composition cancelled")
+            }
+            else {
+                print("Sending tweet!")
+                self.dosEquisThemeSong?.stop()
+                self.dosEquisThemeSong?.currentTime = 0
+            }
+        }
+
     }
     
     override func viewDidLoad() {

@@ -16,6 +16,7 @@
 		6F88450A1C6677C50054CAB1 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8845091C6677C50054CAB1 /* TwitterCore.framework */; };
 		6F8845131C66A81B0054CAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8845121C66A81B0054CAB1 /* Assets.xcassets */; };
 		6FA95A5B1C674B27009F0C9D /* DosEquisThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F59C1C650258005A6F23 /* DosEquisThemeSong.mp3 */; };
+		6FA95A5C1C675826009F0C9D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F5941C644C3A005A6F23 /* Info.plist */; };
 		6FB7F5891C644C3A005A6F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F5881C644C3A005A6F23 /* AppDelegate.swift */; };
 		6FB7F58B1C644C3A005A6F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F58A1C644C3A005A6F23 /* ViewController.swift */; };
 		6FB7F59B1C64FFBB005A6F23 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F59A1C64FFBB005A6F23 /* AlarmViewController.swift */; };
@@ -152,6 +153,7 @@
 				6F3661191C66C570001AC1DC /* Main.storyboard in Resources */,
 				6F8845131C66A81B0054CAB1 /* Assets.xcassets in Resources */,
 				6FA95A5B1C674B27009F0C9D /* DosEquisThemeSong.mp3 in Resources */,
+				6FA95A5C1C675826009F0C9D /* Info.plist in Resources */,
 				6F8845081C6677100054CAB1 /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
