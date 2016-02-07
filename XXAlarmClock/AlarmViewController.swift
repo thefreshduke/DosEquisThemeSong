@@ -14,8 +14,6 @@ class AlarmViewController: UIViewController {
     
     var dosEquisThemeSong: AVAudioPlayer?
     
-//    @IBOutlet weak var currentTimeDisplayLabel: UITextField!
-    
     @IBAction func playDosEquisThemeSong(sender: AnyObject) {
         dosEquisThemeSong?.numberOfLoops = -1
         dosEquisThemeSong?.volume = 1
@@ -32,8 +30,6 @@ class AlarmViewController: UIViewController {
         if let dosEquisThemeSong = self.setupAudioPlayerWithFile("DosEquisThemeSong", type:"mp3") {
             self.dosEquisThemeSong = dosEquisThemeSong
         }
-        
-        // add repeat
     }
     
     func setupAudioPlayerWithFile(file: NSString, type: NSString) -> AVAudioPlayer?  {
@@ -41,6 +37,7 @@ class AlarmViewController: UIViewController {
         // 1
         let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
         let url = NSURL.fileURLWithPath(path!)
+//        let url = NSURL.fileURLWithPath("DosEquisThemeSong.mp3")
         
         // 2
         var audioPlayer: AVAudioPlayer?
@@ -48,6 +45,7 @@ class AlarmViewController: UIViewController {
         // 3
         do {
             try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+//            try audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath("DosEquisThemeSong.mp3"))
         }
         catch {
             print("Player not available")
