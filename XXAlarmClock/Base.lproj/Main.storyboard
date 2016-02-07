@@ -94,6 +94,9 @@
                             <constraint firstItem="A9h-qb-1MY" firstAttribute="top" secondItem="1r5-gT-m0c" secondAttribute="bottom" constant="61" id="ybJ-8q-Icc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timeDisplayLabel" destination="A9h-qb-1MY" id="bks-TQ-RuL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQY-gB-bs9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
