@@ -18,8 +18,8 @@ class AlarmViewController: UIViewController {
     
     @IBOutlet weak var alarmTimeLabel: UITextField!
     
-    var alarmHour: Int = 13
-    var alarmMinute: Int = 44
+    var alarmHour: Int = 14
+    var alarmMinute: Int = 40
     var alarmSecond: Int = 00
     
     @IBOutlet weak var timeDisplayLabel: UITextField!
@@ -72,8 +72,8 @@ class AlarmViewController: UIViewController {
             self.dosEquisThemeSong = dosEquisThemeSong
         }
         
-        let aSelector : Selector = "updateTime"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+        let functionSelector: Selector = "updateTime"
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: functionSelector, userInfo: nil, repeats: true)
         startingTime = NSDate.timeIntervalSinceReferenceDate()
         
         let strAlarmHour = String(format: "%02d", alarmHour)
@@ -105,7 +105,7 @@ class AlarmViewController: UIViewController {
     }
     
     func updateTime () {
-        let date = NSDate()
+        let date = timer.fireDate
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components([.Second, .Minute, .Hour], fromDate: date)
         

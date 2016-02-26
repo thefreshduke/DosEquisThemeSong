@@ -11,10 +11,15 @@ import TwitterKit
 
 class LogInViewController: UIViewController {
     
+    var timer = NSTimer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "xx_dosequis.png")!)
+        
+        let functionSelector: Selector = "updateTime"
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: functionSelector, userInfo: nil, repeats: true)
         
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
             if (session != nil) {
@@ -50,6 +55,11 @@ class LogInViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateTime () {
+//        print("tick tock")
+        print(timer.fireDate)
     }
     
 }

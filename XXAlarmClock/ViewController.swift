@@ -11,7 +11,7 @@ import TwitterKit
 
 class ViewController: UIViewController {
     
-    let isLoggedIn: Bool = false
+    let isLoggedIn: Bool = true
     
     @IBAction func goToNextView(sender: AnyObject) {
         if (isLoggedIn) {

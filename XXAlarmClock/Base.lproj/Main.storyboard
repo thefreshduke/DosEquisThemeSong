@@ -17,10 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-tp-98X">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                <state key="normal" title="    "/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-tp-98X">
+                                <rect key="frame" x="0.0" y="24" width="600" height="551"/>
+                                <state key="normal" backgroundImage="xx_dosequis.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="   ">
+                                            <attributes>
+                                                <font key="NSFont" size="75" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="goToNextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onY-e2-ee9"/>
                                 </connections>
@@ -28,10 +36,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AgU-Fd-IZ7"/>
-                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SwX-uo-M3j"/>
-                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="auk-9F-pxf"/>
-                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lQy-Wi-pgb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sMi-tp-98X" secondAttribute="bottom" constant="25" id="MGm-X2-z8x"/>
+                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W57-Qs-lYL"/>
+                            <constraint firstItem="sMi-tp-98X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xzb-Rr-fIo"/>
+                            <constraint firstItem="sMi-tp-98X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="xgK-6X-NOI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -128,6 +136,9 @@
             <point key="canvasLocation" x="1150" y="739"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="xx_dosequis.png" width="400" height="400"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PBC-Z9-AuM"/>
     </inferredMetricsTieBreakers>

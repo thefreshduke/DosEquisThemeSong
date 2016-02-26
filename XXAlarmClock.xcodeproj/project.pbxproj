@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F03C6C01C6AC639005042BD /* xx_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA95A631C6778F6009F0C9D /* xx_man.png */; };
+		6F03C6C11C6AC640005042BD /* Twitter.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F3661171C66BCCC001AC1DC /* Twitter.framework */; };
+		6F03C6C21C6AC645005042BD /* TwitterCore.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F8845091C6677C50054CAB1 /* TwitterCore.framework */; };
+		6F03C6C31C6AC64A005042BD /* Fabric.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F8845031C6677100054CAB1 /* Fabric.framework */; };
+		6F03C6C41C6AC64E005042BD /* TwitterKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F8845041C6677100054CAB1 /* TwitterKit.framework */; };
+		6F03C6C51C6AC683005042BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F58C1C644C3A005A6F23 /* Main.storyboard */; };
 		6F3661181C66BCCC001AC1DC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3661171C66BCCC001AC1DC /* Twitter.framework */; };
-		6F3661191C66C570001AC1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F58C1C644C3A005A6F23 /* Main.storyboard */; };
 		6F8844FA1C6663EB0054CAB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8844F91C6663EB0054CAB1 /* LogInViewController.swift */; };
 		6F8845061C6677100054CAB1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8845031C6677100054CAB1 /* Fabric.framework */; };
 		6F8845071C6677100054CAB1 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8845041C6677100054CAB1 /* TwitterKit.framework */; };
 		6F8845081C6677100054CAB1 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F8845051C6677100054CAB1 /* TwitterKitResources.bundle */; };
 		6F88450A1C6677C50054CAB1 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8845091C6677C50054CAB1 /* TwitterCore.framework */; };
 		6F8845131C66A81B0054CAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8845121C66A81B0054CAB1 /* Assets.xcassets */; };
-		6FA95A5B1C674B27009F0C9D /* DosEquisThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F59C1C650258005A6F23 /* DosEquisThemeSong.mp3 */; };
-		6FA95A5C1C675826009F0C9D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7F5941C644C3A005A6F23 /* Info.plist */; };
 		6FA95A601C6777A4009F0C9D /* xx_dosequis.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA95A5F1C6777A4009F0C9D /* xx_dosequis.png */; };
 		6FA95A621C6777FB009F0C9D /* DosEquisThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FA95A611C6777FB009F0C9D /* DosEquisThemeSong.mp3 */; };
-		6FA95A641C6778F6009F0C9D /* xx_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA95A631C6778F6009F0C9D /* xx_man.png */; };
 		6FB7F5891C644C3A005A6F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F5881C644C3A005A6F23 /* AppDelegate.swift */; };
 		6FB7F58B1C644C3A005A6F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F58A1C644C3A005A6F23 /* ViewController.swift */; };
 		6FB7F59B1C64FFBB005A6F23 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7F59A1C64FFBB005A6F23 /* AlarmViewController.swift */; };
@@ -159,13 +161,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FA95A641C6778F6009F0C9D /* xx_man.png in Resources */,
-				6F3661191C66C570001AC1DC /* Main.storyboard in Resources */,
+				6F03C6C51C6AC683005042BD /* Main.storyboard in Resources */,
+				6F03C6C41C6AC64E005042BD /* TwitterKit.framework in Resources */,
+				6F03C6C31C6AC64A005042BD /* Fabric.framework in Resources */,
+				6F03C6C21C6AC645005042BD /* TwitterCore.framework in Resources */,
+				6F03C6C11C6AC640005042BD /* Twitter.framework in Resources */,
+				6F03C6C01C6AC639005042BD /* xx_man.png in Resources */,
 				6FA95A601C6777A4009F0C9D /* xx_dosequis.png in Resources */,
 				6F8845131C66A81B0054CAB1 /* Assets.xcassets in Resources */,
-				6FA95A5B1C674B27009F0C9D /* DosEquisThemeSong.mp3 in Resources */,
 				6FA95A621C6777FB009F0C9D /* DosEquisThemeSong.mp3 in Resources */,
-				6FA95A5C1C675826009F0C9D /* Info.plist in Resources */,
 				6F8845081C6677100054CAB1 /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
